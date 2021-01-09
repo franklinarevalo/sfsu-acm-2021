@@ -9,6 +9,13 @@ import {
   Avatar,
 } from '@material-ui/core'
 
+import affan_image from "./data/affan.jpg";
+import franklyn_image from "./data/franklyn.jpg";
+import mallissa_image from "./data/mallissa.jpg";
+import siddhi_image from "./data/siddhi.png";
+import wameedh_image from "./data/wameedh.jpg";
+import yennie_image from "./data/yennie.jpg";
+
 const styles = (theme) => ({
   blogContentWrapper: {
     marginLeft: theme.spacing(1),
@@ -34,29 +41,36 @@ const styles = (theme) => ({
 
 const team = [
   {
-    name: 'Artem A.',
-    title: 'SW Developer',
-    description:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-    image:
-      'https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/198363/fc18522d-4192-4bb6-9ba9-400ee29efc79.jpg',
+    name: 'Malissa Murga',
+    title: 'President',
+    image: mallissa_image,
   },
   {
-    name: 'Artem A.',
-    title: 'SW Developer',
-    description:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-    image:
-      'https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/198363/fc18522d-4192-4bb6-9ba9-400ee29efc79.jpg',
+    name: 'Wameedh Mohammed Ali',
+    title: 'Vice President',
+    image: wameedh_image,
   },
   {
-    name: 'Artem A.',
-    title: 'SW Developer',
-    description:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-    image:
-      'https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/198363/fc18522d-4192-4bb6-9ba9-400ee29efc79.jpg',
+    name: 'Affaan Ghazzali',
+    title: 'Tresurer',
+    image: affan_image,
   },
+  {
+    name: 'Siddhi Rote',
+    title: 'Digital Media Chair',
+    image: siddhi_image,
+  },
+  {
+    name: 'Franklin Arevalo',
+    title: 'Social Outreach Manager',
+    image: franklyn_image,
+  },
+  {
+    name: 'Yennie Tran',
+    title: 'Social Outreach Manager',
+    image: yennie_image,
+  },
+  
 ]
 
 function About(props) {
@@ -91,9 +105,11 @@ function About(props) {
                 <Typography variant="subtitle2" gutterBottom>
                   {element.title}
                 </Typography>
-                <Typography variant="body1" gutterBottom>
-                  {element.description}
-                </Typography>
+                {element.description && (
+                  <Typography variant="body1" gutterBottom>
+                    {element.description}
+                  </Typography>
+                )}
               </div>
             </Grid>
           ))}
