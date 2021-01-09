@@ -61,9 +61,7 @@ function BlogCard(props) {
       )}
       <Box p={2}>
         <Typography variant="body2" color="textSecondary">
-          {format(new Date(date * 1000), 'PPP', {
-            awareOfUnicodeTokens: true,
-          })}
+          {date}
         </Typography>
         <Link
           to={url}

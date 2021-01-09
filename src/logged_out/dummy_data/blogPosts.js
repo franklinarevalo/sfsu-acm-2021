@@ -90,21 +90,59 @@ const content = (
     </Typography>
   </Fragment>
 );
+const interviewContent = (
+  <Fragment>
+    <Typography variant="h6" paragraph>
+      Hone your interview skills
+    </Typography>
+    <Typography paragraph>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet.
+    </Typography>
+    <Typography paragraph>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem.
+    </Typography>
+    <Typography variant="h6" paragraph>
+      Title
+    </Typography>
+    <Typography paragraph>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+      sit amet.
+    </Typography>
+  </Fragment>
+);
 
 export default [
   {
     title: "Interview Prep 2020",
     id: 1,
-    date: 1576281600,
+    date: "Fridays @ 7",
     imageSrc: interviewPrep,
     snippet:
       "Fall 2020 Weekly Interview Prep sessions",
-    content: content
+    content: interviewContent
   },
   {
-    title: "Post 2",
+    title: "Mock Interview",
     id: 2,
-    date: 1576391600,
+    date: "",
     imageSrc: blogPost2,
     snippet:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",

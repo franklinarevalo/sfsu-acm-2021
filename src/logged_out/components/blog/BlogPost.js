@@ -55,9 +55,7 @@ function BlogPost(props) {
                   <b>{title}</b>
                 </Typography>
                 <Typography variant="body1" color="textSecondary">
-                  {format(new Date(date * 1000), 'PPP', {
-                    awareOfUnicodeTokens: true,
-                  })}
+                  {date}
                 </Typography>
               </Box>
               <ZoomImage className={classes.img} src={src} alt="" />
