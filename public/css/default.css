@@ -805,3 +805,15 @@ properly.
 
 
 
+.blue-background {
+   /* Vector 1 */
+
+position: absolute;
+width: 1753px;
+height: 881px;
+left: -303px;
+top: 934px;
+
+background: rgba(31, 85, 145, 0.5);
+
+}

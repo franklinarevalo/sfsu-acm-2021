@@ -23,8 +23,7 @@ class About extends Component {
             <img className="profile-pic"  src={profilepic} alt="Nordic Giant Profile Pic" />
          </div>
          <div className="nine columns main-col">
-            <h2>About Me</h2>
-
+            <h2>About Us</h2>
             <p>{bio}</p>
             <div className="row">
                <div className="columns contact-details">

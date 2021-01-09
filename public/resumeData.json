@@ -1,9 +1,9 @@
 {
   "main": {
-    "name":"Nordic-Giant Project",
+    "name":"ACM 😜 🤪 👻",
     "description":"I am a web development engineer and I use react and python to develop pages. This project is a resume template that can be used as the project home page or resume page",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"As the largest Computer Science student organization at SF State, ACM at San Francisco State University welcomes students of all backgrounds, interest, and skill levels to join our community and share in our passion for CS. Regardless of major or experience, our events are open to everyone!",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "youremailhere@gmail.com",
     "phone": "555-555-5555",
