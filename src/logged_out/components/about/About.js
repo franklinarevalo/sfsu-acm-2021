@@ -34,29 +34,36 @@ const styles = (theme) => ({
 
 const team = [
   {
-    name: 'Artem A.',
-    title: 'SW Developer',
-    description:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-    image:
-      'https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/198363/fc18522d-4192-4bb6-9ba9-400ee29efc79.jpg',
+    name: 'Malissa Murga',
+    title: 'President',
+    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
   },
   {
-    name: 'Artem A.',
-    title: 'SW Developer',
-    description:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-    image:
-      'https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/198363/fc18522d-4192-4bb6-9ba9-400ee29efc79.jpg',
+    name: 'Wameedh Mohammed Ali',
+    title: 'Vice President',
+    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
   },
   {
-    name: 'Artem A.',
-    title: 'SW Developer',
-    description:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-    image:
-      'https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/198363/fc18522d-4192-4bb6-9ba9-400ee29efc79.jpg',
+    name: 'Affaan Ghazzali',
+    title: 'Tresurer',
+    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
   },
+  {
+    name: 'Siddhi Rote',
+    title: 'Digital Media Chair',
+    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
+  },
+  {
+    name: 'Franklin Arevalo',
+    title: 'Social Outreach Manager',
+    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
+  },
+  {
+    name: 'Yennie Tran',
+    title: 'Social Outreach Manager',
+    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
+  },
+  
 ]
 
 function About(props) {
@@ -91,9 +98,11 @@ function About(props) {
                 <Typography variant="subtitle2" gutterBottom>
                   {element.title}
                 </Typography>
-                <Typography variant="body1" gutterBottom>
-                  {element.description}
-                </Typography>
+                {element.description && (
+                  <Typography variant="body1" gutterBottom>
+                    {element.description}
+                  </Typography>
+                )}
               </div>
             </Grid>
           ))}
