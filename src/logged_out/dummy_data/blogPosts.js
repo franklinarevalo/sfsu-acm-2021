@@ -6,6 +6,7 @@ import blogPost3 from "./images/blogPost3.jpg";
 import blogPost4 from "./images/blogPost4.jpg";
 import blogPost5 from "./images/blogPost5.jpg";
 import blogPost6 from "./images/blogPost6.jpg";
+import interviewPrep from "./images/events/interviewPrep.png";
 
 const content = (
   <Fragment>
@@ -92,12 +93,12 @@ const content = (
 
 export default [
   {
-    title: "Post 1",
+    title: "Interview Prep 2020",
     id: 1,
     date: 1576281600,
-    imageSrc: blogPost1,
+    imageSrc: interviewPrep,
     snippet:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+      "Fall 2020 Weekly Interview Prep sessions",
     content: content
   },
   {
