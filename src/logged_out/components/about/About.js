@@ -9,6 +9,13 @@ import {
   Avatar,
 } from '@material-ui/core'
 
+import affan_image from "./data/affan.jpg";
+import franklyn_image from "./data/franklyn.jpg";
+import mallissa_image from "./data/mallissa.jpg";
+import siddhi_image from "./data/siddhi.png";
+import wameedh_image from "./data/wameedh.jpg";
+import yennie_image from "./data/yennie.jpg";
+
 const styles = (theme) => ({
   blogContentWrapper: {
     marginLeft: theme.spacing(1),
@@ -36,32 +43,32 @@ const team = [
   {
     name: 'Malissa Murga',
     title: 'President',
-    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
+    image: mallissa_image,
   },
   {
     name: 'Wameedh Mohammed Ali',
     title: 'Vice President',
-    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
+    image: wameedh_image,
   },
   {
     name: 'Affaan Ghazzali',
     title: 'Tresurer',
-    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
+    image: affan_image,
   },
   {
     name: 'Siddhi Rote',
     title: 'Digital Media Chair',
-    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
+    image: siddhi_image,
   },
   {
     name: 'Franklin Arevalo',
     title: 'Social Outreach Manager',
-    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
+    image: franklyn_image,
   },
   {
     name: 'Yennie Tran',
     title: 'Social Outreach Manager',
-    image: 'https://sfsu-acm.club/static/media/DEFAULT.0a86d1fe.png',
+    image: yennie_image,
   },
   
 ]
