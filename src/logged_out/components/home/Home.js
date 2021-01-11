@@ -31,7 +31,7 @@ function Home(props) {
             display="inline"
             color="secondary"
           >
-            ACM at SFSU
+            View more >>
           </Typography>
         </Link>
         <FeatureSection />
