@@ -6,16 +6,20 @@ import PricingSection from './PricingSection'
 import About from '../about/About'
 
 import * as Scroll from 'react-scroll'
+import Blog from '../blog/Blog'
 
 const Element = Scroll.Element
 
-function Home() {
+function Home(props) {
+  const { blogPosts, selectBlog } = props
+
   return (
     <Fragment>
       <Element name="home-section">
         <HeadSection />
       </Element>
       <Element name="events-section">
+        <Blog blogPosts={blogPosts} selectBlog={selectBlog}/>
         <FeatureSection />
       </Element>
       <PricingSection />

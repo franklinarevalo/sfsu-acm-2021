@@ -128,7 +128,7 @@ function Main(props) {
         handleMobileDrawerOpen={handleMobileDrawerOpen}
         handleMobileDrawerClose={handleMobileDrawerClose}
       />
-      <Home />
+      <Home selectBlog={selectBlog} blogPosts={blogPosts}/>
       <Footer />
     </div>
   )
