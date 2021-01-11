@@ -2,8 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Typography, Box, withStyles } from "@material-ui/core";
 import CheckIcon from "@material-ui/icons/Check";
-
+import { Link } from 'react-router-dom'
 const styles = theme => ({
+  img: {
+    width: '100%',
+    height: 400,
+    marginBottom: 8,
+    objectFit: 'contain',
+  },
   card: {
     paddingTop: theme.spacing(6),
     paddingBottom: theme.spacing(6),
@@ -31,7 +37,7 @@ const styles = theme => ({
 });
 
 function PriceCard(props) {
-  const { classes, theme, title, pricing, features, highlighted } = props;
+  const { classes, theme, title, pricing, src, features, highlighted } = props;
   return (
     <div className={highlighted ? classes.cardHightlighted : classes.card}>
       <Box mb={2}>
@@ -42,6 +48,11 @@ function PriceCard(props) {
           {title}
         </Typography>
       </Box>
+      {src && (
+        <Link tabIndex={-1}>
+          <img src={src} className={classes.img} alt="" />
+        </Link>
+      )}
       <Box mb={2}>
         <Typography
           variant={highlighted ? "h3" : "h4"}
@@ -77,6 +88,7 @@ PriceCard.propTypes = {
   classes: PropTypes.object.isRequired,
   theme: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
+  src: PropTypes.string,
   pricing: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
   highlighted: PropTypes.bool
 };
