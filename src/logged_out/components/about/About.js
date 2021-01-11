@@ -1,8 +1,13 @@
 import React from 'react'
 import classNames from 'classnames'
 import { Box, withStyles } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
+// import tileData from './tileData'
+
 import {
   Grid,
+  GridList,
+  GridListTile,
   Typography,
   isWidthUp,
   withWidth,
@@ -37,7 +42,56 @@ const styles = (theme) => ({
     width: 200,
     margin: theme.spacing(4),
   },
+  textBox : {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
 })
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
+  },
+  gridList: {
+    width: 500,
+    height: 750,
+  },
+}));
+
+
+
+ 
+  const tileData = [
+    {
+      img: mallissa_image,
+      title: 'Image',
+      author: 'author',
+      cols: 2,
+    },
+    {
+      img: siddhi_image,
+      title: 'Image',
+      author: 'author',
+      cols: 1,
+    },
+    {
+      img: yennie_image,
+      title: 'Image',
+      author: 'author',
+      cols: 1,
+    },
+    {
+      img: franklyn_image,
+      title: 'Image',
+      author: 'author',
+      cols: 1,
+    },
+  ];
 
 const team = [
   {
@@ -80,6 +134,25 @@ function About(props) {
     <div className="container-fluid lg-p-top">
       <Typography variant="h3" align="center" className="lg-mg-bottom">
         About Us
+      </Typography>
+      <div className={classes.root}>
+        <GridList cellHeight={250} className={classes.gridList} cols={3}>
+          {tileData.map((tile) => (
+            <GridListTile key={tile.img} cols={tile.cols || 1}>
+              <img src={tile.img} alt={tile.title} />
+            </GridListTile>
+          ))}
+        </GridList>
+      </div>
+      {/* <Typography variant="h5" align="center" className="lg-mg-bottom">
+      As the largest Computer Science student organization at SF State, ACM at San Francisco State University welcomes students of all backgrounds, interest, and skill levels to join our community and share in our passion for CS. Regardless of major or experience, our events are open to everyone!
+      </Typography> */}
+      
+      {/* using for space */}
+      <Typography variant="h5" align="center" className="lg-mg-bottom"></Typography>
+
+      <Typography variant="h3" align="center" className="lg-mg-bottom">
+        Meet Our Team
       </Typography>
       <div className="container-fluid">
         <Grid container justify={'center'} spacing={5}>

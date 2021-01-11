@@ -160,7 +160,7 @@ function HeadSection(props) {
                           variant={isWidthUp('lg', width) ? 'h3' : 'h4'}
                           align='center'
                         >
-                          Association for Computing Machinery <br/> at <br/> San Francisco State University
+                          Association for Computing Machinery at San Francisco State University
                         </Typography>
                       </Box>
                 </Box>
