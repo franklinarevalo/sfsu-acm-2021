@@ -9,6 +9,10 @@ import blogPost6 from "./images/blogPost6.jpg";
 import interviewPrep from "./images/events/interviewPrep.png";
 import adventOfCode from "./images/events/AdventOfCode.png";
 import mockInterview from "./images/events/mockInterview.jpg";
+import iotWorkshop from "./images/events/IoTworkshopflyer.jpeg";
+import arvrWorkshop from "./images/events/arvr.png";
+
+import appWorkshop from "./images/events/appDev.png";
 
 const content = (
   <Fragment>
@@ -118,7 +122,7 @@ export default [
     title: "Android Application Workshop",
     id: 6,
     date: 1575281600,
-    imageSrc: blogPost6,
+    imageSrc: appWorkshop,
     snippet:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     content: content
@@ -127,7 +131,7 @@ export default [
     title: "AR / VR Workshop",
     id: 6,
     date: 1575281600,
-    imageSrc: blogPost6,
+    imageSrc: arvrWorkshop,
     snippet:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     content: content
@@ -136,7 +140,7 @@ export default [
     title: "IOT Workshop",
     id: 6,
     date: 1575281600,
-    imageSrc: blogPost6,
+    imageSrc: iotWorkshop,
     snippet:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     content: content

@@ -10,7 +10,7 @@ const styles = (theme) => ({
     width: '100%',
     height: 400,
     marginBottom: 8,
-    objectFit: 'cover',
+    objectFit: 'contain',
   },
   card: {
     boxShadow: theme.shadows[2],
