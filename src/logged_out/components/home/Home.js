@@ -1,27 +1,29 @@
-import React, { Fragment, useEffect } from "react";
-import PropTypes from "prop-types";
-import HeadSection from "./HeadSection";
-import FeatureSection from "./FeatureSection";
-import PricingSection from "./PricingSection";
+import React, { Fragment, useEffect } from 'react'
+import PropTypes from 'prop-types'
+import HeadSection from './HeadSection'
+import FeatureSection from './FeatureSection'
+import PricingSection from './PricingSection'
 import About from '../about/About'
 
-function Home(props) {
-  const { selectHome } = props;
-  useEffect(() => {
-    selectHome();
-  }, [selectHome]);
+import * as Scroll from 'react-scroll'
+
+const Element = Scroll.Element
+
+function Home() {
   return (
     <Fragment>
-      <HeadSection />
-      <FeatureSection />
+      <Element name="home-section">
+        <HeadSection />
+      </Element>
+      <Element name="events-section">
+        <FeatureSection />
+      </Element>
       <PricingSection />
-      <About />
+      <Element name="team-section">
+        <About />
+      </Element>
     </Fragment>
-  );
+  )
 }
 
-Home.propTypes = {
-  selectHome: PropTypes.func.isRequired
-};
-
-export default Home;
+export default Home

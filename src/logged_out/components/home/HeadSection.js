@@ -129,13 +129,14 @@ function HeadSection(props) {
                     />
                   </Grid>
                   <Box mx={7}>
-                        <Typography
-                          variant={isWidthUp('lg', width) ? 'h3' : 'h4'}
-                          align='center'
-                        >
-                          Association for Computing Machinery <br/> at <br/> San Francisco State University
-                        </Typography>
-                      </Box>
+                    <Typography
+                      variant={isWidthUp('lg', width) ? 'h3' : 'h4'}
+                      align="center"
+                    >
+                      Association for Computing Machinery <br /> at <br /> San
+                      Francisco State University
+                    </Typography>
+                  </Box>
                 </Box>
               </div>
             </Card>

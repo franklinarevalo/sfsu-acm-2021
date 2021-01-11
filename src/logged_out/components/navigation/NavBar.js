@@ -54,20 +54,17 @@ function NavBar(props) {
   } = props
   const menuItems = [
     {
-      to: 'firstInsideContainer',
-      containerId: '',
+      to: 'home-section',
       name: 'Home',
       icon: <HomeIcon className="text-white" />,
     },
     {
-      to: 'firstInsideContainer',
-      containerId: '',
-      name: 'Blog',
+      to: 'events-section',
+      name: 'Events',
       icon: <BookIcon className="text-white" />,
     },
     {
-      to: 'firstInsideContainer',
-      containerId: 'team',
+      to: 'team-section',
       name: 'Team',
       icon: <HowToRegIcon className="text-white" />,
     },
@@ -109,7 +106,6 @@ function NavBar(props) {
                       className={classes.noDecoration}
                       onClick={handleMobileDrawerClose}
                       smooth={true}
-                      hashSpy={true}
                       offset={50}
                       duration={500}
                     >
