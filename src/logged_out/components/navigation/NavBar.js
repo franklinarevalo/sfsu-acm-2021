@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import {
   AppBar,
   Toolbar,
@@ -40,7 +40,7 @@ const styles = (theme) => ({
   },
 })
 
-const Link = Scroll.Link
+const ScrollLink = Scroll.Link
 
 function NavBar(props) {
   const {
@@ -54,17 +54,17 @@ function NavBar(props) {
   } = props
   const menuItems = [
     {
-      to: 'home-section',
+      to: 'home',
       name: 'Home',
       icon: <HomeIcon className="text-white" />,
     },
     {
-      to: 'events-section',
+      to: 'events',
       name: 'Events',
       icon: <BookIcon className="text-white" />,
     },
     {
-      to: 'team-section',
+      to: 'team',
       name: 'Team',
       icon: <HowToRegIcon className="text-white" />,
     },
@@ -74,7 +74,7 @@ function NavBar(props) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <div>
-            <Link to="firstInsideContainer" containerId="containerElement">
+            <Link className={classes.noDecoration} to="/">
               <Typography
                 variant="h4"
                 className={classes.brandText}
@@ -99,7 +99,7 @@ function NavBar(props) {
               {menuItems.map((element) => {
                 if (element.to) {
                   return (
-                    <Link
+                    <ScrollLink
                       key={element.name}
                       to={element.to}
                       containerId={element.containerId}
@@ -108,6 +108,8 @@ function NavBar(props) {
                       smooth={true}
                       offset={50}
                       duration={500}
+                      spy={true}
+                      hashSpy={true}
                     >
                       <Button
                         color="secondary"
@@ -116,7 +118,7 @@ function NavBar(props) {
                       >
                         {element.name}
                       </Button>
-                    </Link>
+                    </ScrollLink>
                   )
                 }
                 return (
