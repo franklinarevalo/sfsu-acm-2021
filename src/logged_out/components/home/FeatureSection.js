@@ -74,7 +74,7 @@ const features = [
   },
   {
     color: '#DD2C00',
-    headline: 'Feature 5',
+    headline: 'Learn New Tools',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
     icon: <BarChartIcon style={{ fontSize: iconSize }} />,

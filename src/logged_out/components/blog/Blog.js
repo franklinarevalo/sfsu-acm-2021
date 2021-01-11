@@ -30,9 +30,6 @@ function getVerticalBlogPosts(width, blogPosts) {
   if (isWidthUp('lg', width)) {
     rows = 3
     xs = 4
-  } else if (isWidthUp('md', width)) {
-    rows = 2
-    xs = 6
   } else {
     rows = 1
     xs = 12

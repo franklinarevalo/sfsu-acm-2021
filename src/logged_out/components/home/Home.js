@@ -6,12 +6,20 @@ import PricingSection from './PricingSection'
 import About from '../about/About'
 import { Link } from 'react-router-dom'
 
-import {
-  Typography,
-} from '@material-ui/core'
+import { Typography, withWidth, withStyles } from '@material-ui/core'
 
 import * as Scroll from 'react-scroll'
 import Blog from '../blog/Blog'
+
+const styles = (theme) => ({
+  noDecoration: {
+    textDecoration: 'none !important',
+  },
+  centerDiv: {
+    justifyContent: 'center',
+    display: 'flex',
+  },
+})
 
 const Element = Scroll.Element
 
@@ -25,16 +33,18 @@ function Home(props) {
       </Element>
       <Element name="events">
         <Blog blogPosts={blogPosts.slice(1, 4)} selectBlog={selectBlog} />
-        <Link  align="center" to="/blog">
-          <Typography
-            variant="h4"
-            display="inline"
-            color="secondary"
-            align="center"
-          >
-            View more {'>>'}
-          </Typography>
-        </Link>
+        <div className={classes.centerDiv}>
+          <Link className={classes.noDecoration} to="/blog">
+            <Typography
+              variant="h4"
+              display="inline"
+              color="secondary"
+              align="center"
+            >
+              View more
+            </Typography>
+          </Link>
+        </div>
         <FeatureSection />
       </Element>
       <PricingSection />
@@ -45,4 +55,4 @@ function Home(props) {
   )
 }
 
-export default Home
+export default withWidth()(withStyles(styles, { withTheme: true })(Home))

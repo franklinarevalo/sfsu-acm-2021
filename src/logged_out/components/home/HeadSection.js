@@ -13,7 +13,18 @@ import {
 } from '@material-ui/core'
 import WaveBorder from '../../../shared/components/WaveBorder'
 
+
 const styles = (theme) => ({
+  header: {
+    display: 'block',
+    justifyContent: 'row',
+    [theme.breakpoints.up('sm')]: {
+      display: 'flex',
+      alignItems:'center', 
+      justifyContent:'column',
+    },
+    
+  },
   extraLargeButtonLabel: {
     fontSize: theme.typography.body1.fontSize,
     [theme.breakpoints.up('sm')]: {
@@ -58,9 +69,9 @@ const styles = (theme) => ({
       paddingLeft: theme.spacing(6),
       paddingRight: theme.spacing(6),
     },
-    [theme.breakpoints.down('lg')]: {
-      width: 'auto',
-    },
+    // [theme.breakpoints.down('lg')]: {
+    //   width: 'auto',
+    // },
   },
   wrapper: {
     position: 'relative',
@@ -68,11 +79,11 @@ const styles = (theme) => ({
     paddingBottom: theme.spacing(2),
   },
   image: {
-    maxWidth: '100%',
+    maxWidth: '80%',
     verticalAlign: 'middle',
     borderRadius: theme.shape.borderRadius,
     [theme.breakpoints.down('sm')]: {
-      marginBottom: theme.spacing(6),
+      marginBottom: theme.spacing(2),
     },
   },
   container: {
@@ -99,7 +110,7 @@ const styles = (theme) => ({
   bannerBox: {
     flexDirection: 'row',
     [theme.breakpoints.down('sm')]: {
-      flexDirection: 'column-reverse',
+      flexDirection: 'row',
     },
   },
 })
@@ -110,33 +121,29 @@ function HeadSection(props) {
     <Fragment>
       <div className={classNames('lg-p-top', classes.wrapper)}>
         <div className={classNames('container-fluid', classes.container)}>
-          <Box display="flex" justifyContent="center" className="row">
+          <Box>
             <Card
               className={classes.card}
               data-aos-delay="200"
               data-aos="zoom-in"
             >
-              <div className={classNames(classes.containerFix, 'container')}>
-                <Box
-                  justifyContent="space-between"
-                  className={classNames('row', classes.bannerBox)}
-                >
-                  <Grid item md={6}>
-                    <img
+              <div>
+                <Grid container>
+                
+                  <Grid item className={classes.header}>
+                  <img
                       src="https://raw.githubusercontent.com/franklinarevalo/sfsu-acm-2021/v2/src/logged_out/dummy_data/images/acm-logo.png"
                       className={classes.image}
                       alt="header logo"
                     />
-                  </Grid>
-                  <Box mx={7}>
                         <Typography
                           variant={isWidthUp('lg', width) ? 'h3' : 'h4'}
                           align='center'
                         >
                           Association for Computing Machinery at San Francisco State University
                         </Typography>
-                      </Box>
-                </Box>
+                      </Grid>
+                </Grid>
               </div>
             </Card>
           </Box>

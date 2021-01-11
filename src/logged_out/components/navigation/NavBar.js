@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import {
   AppBar,
   Toolbar,
@@ -43,10 +43,9 @@ const styles = (theme) => ({
 const ScrollLink = Scroll.Link
 
 function NavBar(props) {
+  let location = useLocation()
   const {
     classes,
-    openRegisterDialog,
-    openLoginDialog,
     handleMobileDrawerOpen,
     handleMobileDrawerClose,
     mobileDrawerOpen,
@@ -86,53 +85,56 @@ function NavBar(props) {
             </Link>
           </div>
           <div>
-            <Hidden mdUp>
-              <IconButton
-                className={classes.menuButton}
-                onClick={handleMobileDrawerOpen}
-                aria-label="Open Navigation"
-              >
-                <MenuIcon color="primary" />
-              </IconButton>
-            </Hidden>
+            {location.pathname === '/' && (
+              <Hidden mdUp>
+                <IconButton
+                  className={classes.menuButton}
+                  onClick={handleMobileDrawerOpen}
+                  aria-label="Open Navigation"
+                >
+                  <MenuIcon color="primary" />
+                </IconButton>
+              </Hidden>
+            )}
             <Hidden smDown>
-              {menuItems.map((element) => {
-                if (element.to) {
-                  return (
-                    <ScrollLink
-                      key={element.name}
-                      to={element.to}
-                      containerId={element.containerId}
-                      className={classes.noDecoration}
-                      onClick={handleMobileDrawerClose}
-                      smooth={true}
-                      offset={50}
-                      duration={500}
-                      spy={true}
-                      hashSpy={true}
-                    >
-                      <Button
-                        color="secondary"
-                        size="large"
-                        classes={{ text: classes.menuButtonText }}
+              {location.pathname === '/' &&
+                menuItems.map((element) => {
+                  if (element.to) {
+                    return (
+                      <ScrollLink
+                        key={element.name}
+                        to={element.to}
+                        containerId={element.containerId}
+                        className={classes.noDecoration}
+                        onClick={handleMobileDrawerClose}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        spy={true}
+                        hashSpy={true}
                       >
-                        {element.name}
-                      </Button>
-                    </ScrollLink>
+                        <Button
+                          color="secondary"
+                          size="large"
+                          classes={{ text: classes.menuButtonText }}
+                        >
+                          {element.name}
+                        </Button>
+                      </ScrollLink>
+                    )
+                  }
+                  return (
+                    <Button
+                      color="secondary"
+                      size="large"
+                      onClick={element.onClick}
+                      classes={{ text: classes.menuButtonText }}
+                      key={element.name}
+                    >
+                      {element.name}
+                    </Button>
                   )
-                }
-                return (
-                  <Button
-                    color="secondary"
-                    size="large"
-                    onClick={element.onClick}
-                    classes={{ text: classes.menuButtonText }}
-                    key={element.name}
-                  >
-                    {element.name}
-                  </Button>
-                )
-              })}
+                })}
             </Hidden>
           </div>
         </Toolbar>
