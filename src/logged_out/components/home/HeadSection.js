@@ -121,23 +121,18 @@ function HeadSection(props) {
                   justifyContent="space-between"
                   className={classNames('row', classes.bannerBox)}
                 >
-                  <Grid item xs={12} md={5}>
+                  {/* <Grid item xs={12} md={5}>
                     <Box display="flex" flexDirection="column" height="100%">
-                      <Box mb={4}>
-                        <Typography
-                          variant={isWidthUp('lg', width) ? 'h3' : 'h4'}
-                        >
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                        </Typography>
-                      </Box>
+                    
                       <div>
                         <Box mb={2}>
                           <Typography
                             variant={isWidthUp('lg', width) ? 'h6' : 'body1'}
                             color="textSecondary"
                           >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt
+                            Association for Computing Machinery 
+                            at 
+                            San Francisco State University
                           </Typography>
                         </Box>
                         <Button
@@ -152,14 +147,22 @@ function HeadSection(props) {
                         </Button>
                       </div>
                     </Box>
-                  </Grid>
+                  </Grid> */}
                   <Grid item md={6}>
                     <img
-                      src="https://aakatev.github.io/bigbluebutton-js-docs/images/landing.png"
+                      src="https://raw.githubusercontent.com/franklinarevalo/sfsu-acm-2021/v2/src/logged_out/dummy_data/images/acm-logo.png"
                       className={classes.image}
                       alt="header logo"
                     />
                   </Grid>
+                  <Box mx={7}>
+                        <Typography
+                          variant={isWidthUp('lg', width) ? 'h3' : 'h4'}
+                          align='center'
+                        >
+                          Association for Computing Machinery <br/> at <br/> San Francisco State University
+                        </Typography>
+                      </Box>
                 </Box>
               </div>
             </Card>

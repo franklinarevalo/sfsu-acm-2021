@@ -71,21 +71,21 @@ function NavBar(props) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <div>
-            <Typography
+            {/* <Typography
               variant="h4"
               className={classes.brandText}
               display="inline"
               color="primary"
             >
               Wa
-            </Typography>
+            </Typography> */}
             <Typography
               variant="h4"
               className={classes.brandText}
               display="inline"
               color="secondary"
             >
-              Ver
+              ACM at SFSU
             </Typography>
           </div>
           <div>
