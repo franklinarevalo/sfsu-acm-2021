@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
+import { Link } from 'react-router-dom'
 import {
   Grid,
   Typography,
@@ -10,6 +11,8 @@ import {
 } from '@material-ui/core'
 import PriceCard from './PriceCard'
 import calculateSpacing from './calculateSpacing'
+import tshirt from "../../dummy_data/images/merch/acmTshirt.png"
+import hoodie from "../../dummy_data/images/merch/acmHoodie.png"
 
 const styles = (theme) => ({
   containerFix: {
@@ -47,18 +50,21 @@ const styles = (theme) => ({
 
 const pricePlans = [
   {
-    title: 'Personal',
-    price: '0.00',
+    title: 'ACM T-Shirt',
+    price: '25.00',
+    src: tshirt,
     features: ['Feature 1', 'Feature 2', 'Feature 3'],
   },
   {
-    title: 'Organization',
-    price: '59.99',
+    title: 'ACM Hoodie',
+    price: '35.00',
+    src: hoodie,
     features: ['Feature 1', 'Feature 2', 'Feature 3'],
   },
   {
-    title: 'Enterprise',
-    price: '299.99',
+    title: 'Custom',
+    price: '35.00',
+    src: tshirt,
     features: ['Feature 1', 'Feature 2', 'Feature 3'],
   },
 ]
@@ -68,7 +74,7 @@ function PricingSection(props) {
   return (
     <div className="lg-p-top" style={{ backgroundColor: '#FFFFFF' }}>
       <Typography variant="h3" align="center" className="lg-mg-bottom">
-        Pricing
+        Merchandise 
       </Typography>
       <div className={classNames('container-fluid', classes.containerFix)}>
         <Grid
@@ -86,6 +92,7 @@ function PricingSection(props) {
             >
               <PriceCard
                 title={plan.title}
+                src={plan.src}
                 pricing={
                   <span>
                     {plan.price}
