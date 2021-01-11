@@ -10,7 +10,7 @@ import {
   withStyles,
 } from '@material-ui/core'
 import PriceCard from './PriceCard'
-import calculateSpacing from './calculateSpacing'
+import calculateSpacing from '../home/calculateSpacing'
 import tshirt from "../../dummy_data/images/merch/acmTshirt.png"
 import hoodie from "../../dummy_data/images/merch/acmHoodie.png"
 

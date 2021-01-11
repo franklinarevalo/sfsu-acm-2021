@@ -29,29 +29,9 @@ function Home(props) {
   return (
     <Fragment>
       <Element name="home">
-        <HeadSection />
-      </Element>
-      <Element name="events">
-      <FeatureSection />
-      <Typography variant="h3" align="center" className="md-mg-bottom">
-          Events
-        </Typography>
-        <Blog blogPosts={blogPosts.slice(1, 4)} selectBlog={selectBlog} />
-        <div className={classes.centerDiv}>
-          <Link className={classes.noDecoration} to="/blog">
-            <Typography
-              variant="h4"
-              display="inline"
-              color="secondary"
-              align="center"
-            >
-              View more
-            </Typography>
-          </Link>
-        </div>
-      
-      </Element>
       <PricingSection />
+      </Element>
+     
       <Element name="team">
         <About />
       </Element>
