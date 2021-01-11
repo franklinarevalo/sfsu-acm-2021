@@ -17,8 +17,8 @@ const styles = (theme) => ({
   },
   centerDiv: {
     justifyContent: 'center',
-    display: 'flex'
-  }
+    display: 'flex',
+  },
 })
 
 const Element = Scroll.Element
