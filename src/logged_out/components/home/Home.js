@@ -4,6 +4,11 @@ import HeadSection from './HeadSection'
 import FeatureSection from './FeatureSection'
 import PricingSection from './PricingSection'
 import About from '../about/About'
+import { Link } from 'react-router-dom'
+
+import {
+  Typography,
+} from '@material-ui/core'
 
 import * as Scroll from 'react-scroll'
 import Blog from '../blog/Blog'
@@ -11,19 +16,28 @@ import Blog from '../blog/Blog'
 const Element = Scroll.Element
 
 function Home(props) {
-  const { blogPosts, selectBlog } = props
+  const { blogPosts, selectBlog, classes } = props
 
   return (
     <Fragment>
-      <Element name="home-section">
+      <Element name="home">
         <HeadSection />
       </Element>
-      <Element name="events-section">
-        <Blog blogPosts={blogPosts} selectBlog={selectBlog}/>
+      <Element name="events">
+        <Blog blogPosts={blogPosts.slice(1, 3)} selectBlog={selectBlog} />
+        <Link to="/blog">
+          <Typography
+            variant="h4"
+            display="inline"
+            color="secondary"
+          >
+            ACM at SFSU
+          </Typography>
+        </Link>
         <FeatureSection />
       </Element>
       <PricingSection />
-      <Element name="team-section">
+      <Element name="team">
         <About />
       </Element>
     </Fragment>
