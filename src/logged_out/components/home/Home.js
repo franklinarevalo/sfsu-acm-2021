@@ -32,6 +32,10 @@ function Home(props) {
         <HeadSection />
       </Element>
       <Element name="events">
+      <FeatureSection />
+      <Typography variant="h3" align="center" className="md-mg-bottom">
+          Events
+        </Typography>
         <Blog blogPosts={blogPosts.slice(1, 4)} selectBlog={selectBlog} />
         <div className={classes.centerDiv}>
           <Link className={classes.noDecoration} to="/blog">
@@ -45,7 +49,7 @@ function Home(props) {
             </Typography>
           </Link>
         </div>
-        <FeatureSection />
+      
       </Element>
       <PricingSection />
       <Element name="team">

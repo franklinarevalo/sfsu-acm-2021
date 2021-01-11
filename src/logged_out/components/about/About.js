@@ -155,7 +155,7 @@ function About(props) {
       
       {/* using for space */}
       {/* <Typography variant="h5" align="center" className="lg-mg-bottom"></Typography> */}
-
+      
       <Typography variant="h3" align="center" className="md-mg-bottom">
         Meet Our Team
       </Typography>

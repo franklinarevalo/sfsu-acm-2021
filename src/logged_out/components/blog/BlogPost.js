@@ -25,7 +25,7 @@ const styles = (theme) => ({
   img: {
     width: '100%',
     height: 400,
-    objectFit: 'cover',
+    objectFit: 'contain',
   },
   card: {
     boxShadow: theme.shadows[4],

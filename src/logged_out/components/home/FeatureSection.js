@@ -125,11 +125,11 @@ function FeatureSection(props) {
   return (
     <div style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container-fluid lg-p-top">
-        <Typography variant="h3" align="center" className="md-mg-bottom">
+        <Typography variant="h3" align="center" className="lg-mg-bottom">
           What we do
         </Typography>
         <div className="container-fluid">
-          <Grid container spacing={calculateSpacing(width)}>
+          <Grid container spacing={calculateSpacing(width)} className="lg-mg-bottom">
             {features.map((element) => (
               <Grid
                 item
