@@ -8,6 +8,7 @@ import {
   withWidth,
   Avatar,
 } from '@material-ui/core'
+import * as Scroll from 'react-scroll';
 
 import affan_image from "./data/affan.jpg";
 import franklyn_image from "./data/franklyn.jpg";
@@ -15,6 +16,8 @@ import mallissa_image from "./data/mallissa.jpg";
 import siddhi_image from "./data/siddhi.png";
 import wameedh_image from "./data/wameedh.jpg";
 import yennie_image from "./data/yennie.jpg";
+
+const Element   = Scroll.Element;
 
 const styles = (theme) => ({
   blogContentWrapper: {
@@ -77,11 +80,14 @@ function About(props) {
   const { classes, width } = props
 
   return (
-    <div className="container-fluid lg-p-top">
+    <div id="team" className="container-fluid lg-p-top">
       <Typography variant="h3" align="center" className="lg-mg-bottom">
-        About Us
+        Meet Our Team
       </Typography>
       <div className="container-fluid">
+      <Element name="firstInsideContainer">
+      </Element>
+ 
         <Grid container justify={'center'} spacing={5}>
           {team.map((element) => (
             <Grid
@@ -91,7 +97,7 @@ function About(props) {
               data-aos-delay={
                 isWidthUp('md', width) ? element.mdDelay : element.smDelay
               }
-              key={element.headline}
+              key={element.name}
             >
               <div className={classes.card}>
                 <Avatar

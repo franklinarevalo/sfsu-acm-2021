@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import {
   AppBar,
   Toolbar,
@@ -16,6 +16,7 @@ import HowToRegIcon from '@material-ui/icons/HowToReg'
 import LockOpenIcon from '@material-ui/icons/LockOpen'
 import BookIcon from '@material-ui/icons/Book'
 import NavigationDrawer from '../../../shared/components/NavigationDrawer'
+import * as Scroll from 'react-scroll'
 
 const styles = (theme) => ({
   appBar: {
@@ -39,6 +40,8 @@ const styles = (theme) => ({
   },
 })
 
+const Link = Scroll.Link
+
 function NavBar(props) {
   const {
     classes,
@@ -51,18 +54,21 @@ function NavBar(props) {
   } = props
   const menuItems = [
     {
-      link: '/',
+      to: 'firstInsideContainer',
+      containerId: '',
       name: 'Home',
       icon: <HomeIcon className="text-white" />,
     },
     {
-      link: '/blog',
+      to: 'firstInsideContainer',
+      containerId: '',
       name: 'Blog',
       icon: <BookIcon className="text-white" />,
     },
     {
-      link: '/about',
-      name: 'About',
+      to: 'firstInsideContainer',
+      containerId: 'team',
+      name: 'Team',
       icon: <HowToRegIcon className="text-white" />,
     },
   ]
@@ -71,22 +77,16 @@ function NavBar(props) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <div>
-            {/* <Typography
-              variant="h4"
-              className={classes.brandText}
-              display="inline"
-              color="primary"
-            >
-              Wa
-            </Typography> */}
-            <Typography
-              variant="h4"
-              className={classes.brandText}
-              display="inline"
-              color="secondary"
-            >
-              ACM at SFSU
-            </Typography>
+            <Link to="firstInsideContainer" containerId="containerElement">
+              <Typography
+                variant="h4"
+                className={classes.brandText}
+                display="inline"
+                color="secondary"
+              >
+                ACM at SFSU
+              </Typography>
+            </Link>
           </div>
           <div>
             <Hidden mdUp>
@@ -100,13 +100,18 @@ function NavBar(props) {
             </Hidden>
             <Hidden smDown>
               {menuItems.map((element) => {
-                if (element.link) {
+                if (element.to) {
                   return (
                     <Link
                       key={element.name}
-                      to={element.link}
+                      to={element.to}
+                      containerId={element.containerId}
                       className={classes.noDecoration}
                       onClick={handleMobileDrawerClose}
+                      smooth={true}
+                      hashSpy={true}
+                      offset={50}
+                      duration={500}
                     >
                       <Button
                         color="secondary"
