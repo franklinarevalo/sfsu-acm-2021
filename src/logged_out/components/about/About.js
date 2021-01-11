@@ -9,12 +9,12 @@ import {
   Avatar,
 } from '@material-ui/core'
 
-import affan_image from "./data/affan.jpg";
-import franklyn_image from "./data/franklyn.jpg";
-import mallissa_image from "./data/mallissa.jpg";
-import siddhi_image from "./data/siddhi.png";
-import wameedh_image from "./data/wameedh.jpg";
-import yennie_image from "./data/yennie.jpg";
+import affan_image from './data/affan.jpg'
+import franklyn_image from './data/franklyn.jpg'
+import mallissa_image from './data/mallissa.jpg'
+import siddhi_image from './data/siddhi.png'
+import wameedh_image from './data/wameedh.jpg'
+import yennie_image from './data/yennie.jpg'
 
 const styles = (theme) => ({
   blogContentWrapper: {
@@ -70,7 +70,6 @@ const team = [
     title: 'Social Outreach Manager',
     image: yennie_image,
   },
-  
 ]
 
 function About(props) {
@@ -79,7 +78,7 @@ function About(props) {
   return (
     <div className="container-fluid lg-p-top">
       <Typography variant="h3" align="center" className="lg-mg-bottom">
-        About Us
+        Meet Our Team
       </Typography>
       <div className="container-fluid">
         <Grid container justify={'center'} spacing={5}>
@@ -91,7 +90,7 @@ function About(props) {
               data-aos-delay={
                 isWidthUp('md', width) ? element.mdDelay : element.smDelay
               }
-              key={element.headline}
+              key={element.name}
             >
               <div className={classes.card}>
                 <Avatar

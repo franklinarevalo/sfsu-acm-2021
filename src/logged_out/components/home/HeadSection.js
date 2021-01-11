@@ -121,33 +121,6 @@ function HeadSection(props) {
                   justifyContent="space-between"
                   className={classNames('row', classes.bannerBox)}
                 >
-                  {/* <Grid item xs={12} md={5}>
-                    <Box display="flex" flexDirection="column" height="100%">
-                    
-                      <div>
-                        <Box mb={2}>
-                          <Typography
-                            variant={isWidthUp('lg', width) ? 'h6' : 'body1'}
-                            color="textSecondary"
-                          >
-                            Association for Computing Machinery 
-                            at 
-                            San Francisco State University
-                          </Typography>
-                        </Box>
-                        <Button
-                          variant="contained"
-                          color="secondary"
-                          fullWidth
-                          className={classes.extraLargeButton}
-                          classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://github.com/dunky11/react-saas-template"
-                        >
-                          Try Our Demo!
-                        </Button>
-                      </div>
-                    </Box>
-                  </Grid> */}
                   <Grid item md={6}>
                     <img
                       src="https://raw.githubusercontent.com/franklinarevalo/sfsu-acm-2021/v2/src/logged_out/dummy_data/images/acm-logo.png"
@@ -156,13 +129,14 @@ function HeadSection(props) {
                     />
                   </Grid>
                   <Box mx={7}>
-                        <Typography
-                          variant={isWidthUp('lg', width) ? 'h3' : 'h4'}
-                          align='center'
-                        >
-                          Association for Computing Machinery <br/> at <br/> San Francisco State University
-                        </Typography>
-                      </Box>
+                    <Typography
+                      variant={isWidthUp('lg', width) ? 'h3' : 'h4'}
+                      align="center"
+                    >
+                      Association for Computing Machinery <br /> at <br /> San
+                      Francisco State University
+                    </Typography>
+                  </Box>
                 </Box>
               </div>
             </Card>

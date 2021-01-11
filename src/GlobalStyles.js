@@ -78,9 +78,9 @@ const styles = theme => ({
       }
     },
     ".lg-p-top": {
-      paddingTop: `${theme.spacing(20)}px !important`,
+      paddingTop: `${theme.spacing(10)}px !important`,
       [theme.breakpoints.down("md")]: {
-        paddingTop: `${theme.spacing(18)}px !important`
+        paddingTop: `${theme.spacing(8)}px !important`
       },
       [theme.breakpoints.down("sm")]: {
         paddingTop: `${theme.spacing(16)}px !important`
