@@ -32,7 +32,7 @@ function Home(props) {
             color="secondary"
             align="center"
           >
-            View more >>
+            View more {'>>'}
           </Typography>
         </Link>
         <FeatureSection />

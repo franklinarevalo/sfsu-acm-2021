@@ -20,6 +20,12 @@ import mallissa_image from './data/mallissa.jpg'
 import siddhi_image from './data/siddhi.png'
 import wameedh_image from './data/wameedh.jpg'
 import yennie_image from './data/yennie.jpg'
+import github1 from './data/eventPictures/githubworkshop.PNG'
+import github2 from './data/eventPictures/github2.PNG'
+import github3 from './data/eventPictures/gitworkshop.PNG'
+import group from './data/eventPictures/group.PNG'
+
+
 
 const styles = (theme) => ({
   blogContentWrapper: {
@@ -68,25 +74,25 @@ const useStyles = makeStyles((theme) => ({
  
   const tileData = [
     {
-      img: mallissa_image,
+      img: github1,
       title: 'Image',
       author: 'author',
       cols: 2,
     },
     {
-      img: siddhi_image,
+      img: github2,
       title: 'Image',
       author: 'author',
       cols: 1,
     },
     {
-      img: yennie_image,
+      img: github3,
       title: 'Image',
       author: 'author',
       cols: 1,
     },
     {
-      img: franklyn_image,
+      img: group,
       title: 'Image',
       author: 'author',
       cols: 1,
@@ -131,11 +137,11 @@ function About(props) {
 
   return (
     <div className="container-fluid lg-p-top">
-      <Typography variant="h3" align="center" className="lg-mg-bottom">
+      <Typography variant="h3" align="center" className="md-mg-bottom">
         About Us
       </Typography>
       {/* <div className={classes.root}>
-        <GridList cellHeight={250} className={classes.gridList} cols={3}>
+        <GridList cellHeight={200} className={classes.gridList} cols={3}>
           {tileData.map((tile) => (
             <GridListTile key={tile.img} cols={tile.cols || 1}>
               <img src={tile.img} alt={tile.title} />
@@ -150,7 +156,7 @@ function About(props) {
       {/* using for space */}
       {/* <Typography variant="h5" align="center" className="lg-mg-bottom"></Typography> */}
 
-      <Typography variant="h3" align="center" className="lg-mg-bottom">
+      <Typography variant="h3" align="center" className="md-mg-bottom">
         Meet Our Team
       </Typography>
       <div className="container-fluid">

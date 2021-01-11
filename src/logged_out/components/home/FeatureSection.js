@@ -38,7 +38,7 @@ const styles = (theme) => ({
 const features = [
   {
     color: '#00C853',
-    headline: 'Feature 1',
+    headline: 'Resume Building',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
     icon: <BuildIcon style={{ fontSize: iconSize }} />,
@@ -47,7 +47,7 @@ const features = [
   },
   {
     color: '#6200EA',
-    headline: 'Feature 2',
+    headline: 'Plan Events',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
     icon: <CalendarTodayIcon style={{ fontSize: iconSize }} />,
@@ -56,7 +56,7 @@ const features = [
   },
   {
     color: '#0091EA',
-    headline: 'Feature 3',
+    headline: 'Outreach',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
     icon: <MeassageIcon style={{ fontSize: iconSize }} />,
@@ -65,7 +65,7 @@ const features = [
   },
   {
     color: '#d50000',
-    headline: 'Feature 4',
+    headline: 'Research',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
     icon: <ComputerIcon style={{ fontSize: iconSize }} />,
@@ -83,7 +83,7 @@ const features = [
   },
   {
     color: '#64DD17',
-    headline: 'Feature 6',
+    headline: 'Network',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
     icon: <HeadsetMicIcon style={{ fontSize: iconSize }} />,
@@ -92,7 +92,7 @@ const features = [
   },
   {
     color: '#304FFE',
-    headline: 'Feature 7',
+    headline: 'Share Resources',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
     icon: <CloudIcon style={{ fontSize: iconSize }} />,
@@ -101,7 +101,7 @@ const features = [
   },
   {
     color: '#C51162',
-    headline: 'Feature 8',
+    headline: 'Code',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
     icon: <CodeIcon style={{ fontSize: iconSize }} />,
@@ -110,7 +110,7 @@ const features = [
   },
   {
     color: '#00B8D4',
-    headline: 'Feature 9',
+    headline: 'Break Barriers',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
     icon: <CancelIcon style={{ fontSize: iconSize }} />,
@@ -125,8 +125,8 @@ function FeatureSection(props) {
   return (
     <div style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container-fluid lg-p-top">
-        <Typography variant="h3" align="center" className="lg-mg-bottom">
-          Features
+        <Typography variant="h3" align="center" className="md-mg-bottom">
+          What we do
         </Typography>
         <div className="container-fluid">
           <Grid container spacing={calculateSpacing(width)}>
