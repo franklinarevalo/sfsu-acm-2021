@@ -24,12 +24,13 @@ function Home(props) {
         <HeadSection />
       </Element>
       <Element name="events">
-        <Blog blogPosts={blogPosts.slice(1, 3)} selectBlog={selectBlog} />
-        <Link to="/blog">
+        <Blog blogPosts={blogPosts.slice(1, 4)} selectBlog={selectBlog} />
+        <Link  align="center" to="/blog">
           <Typography
             variant="h4"
             display="inline"
             color="secondary"
+            align="center"
           >
             View more >>
           </Typography>
