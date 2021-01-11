@@ -53,19 +53,19 @@ const pricePlans = [
     title: 'ACM T-Shirt',
     price: '25.00',
     src: tshirt,
-    features: ['Feature 1', 'Feature 2', 'Feature 3'],
+    features: ['Black', 'Navy', 'Grey'],
   },
   {
     title: 'ACM Hoodie',
     price: '35.00',
     src: hoodie,
-    features: ['Feature 1', 'Feature 2', 'Feature 3'],
+    features: ['Black', 'Navy', 'Grey'],
   },
   {
     title: 'Custom',
-    price: '35.00',
+    price: '25.00',
     src: tshirt,
-    features: ['Feature 1', 'Feature 2', 'Feature 3'],
+    features: ['Face Mask', 'Socks', 'Beanie'],
   },
 ]
 
@@ -73,7 +73,7 @@ function PricingSection(props) {
   const { width, classes } = props
   return (
     <div className="lg-p-top" style={{ backgroundColor: '#FFFFFF' }}>
-      <Typography variant="h3" align="center" className="lg-mg-bottom">
+      <Typography variant="h3" align="center" className="md-mg-bottom">
         Merchandise 
       </Typography>
       <div className={classNames('container-fluid', classes.containerFix)}>
@@ -96,7 +96,7 @@ function PricingSection(props) {
                 pricing={
                   <span>
                     {plan.price}
-                    <Typography display="inline"> / month</Typography>
+                    <Typography display="inline"> $ USD</Typography>
                   </span>
                 }
                 features={plan.features}
