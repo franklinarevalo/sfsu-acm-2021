@@ -32,14 +32,13 @@ function Main(props) {
 
   const selectHome = useCallback(() => {
     smoothScrollTop()
-    document.title =
-      'WaVer - Free template for building an SaaS or admin application'
+    document.title = 'ACM Home | SFSU'
     setSelectedTab('Home')
   }, [setSelectedTab])
 
   const selectBlog = useCallback(() => {
     smoothScrollTop()
-    document.title = 'WaVer - Blog'
+    document.title = 'ACM Events | SFSU'
     setSelectedTab('Blog')
   }, [setSelectedTab])
 
@@ -128,7 +127,11 @@ function Main(props) {
         handleMobileDrawerOpen={handleMobileDrawerOpen}
         handleMobileDrawerClose={handleMobileDrawerClose}
       />
-      <Home selectBlog={selectBlog} blogPosts={blogPosts}/>
+      <Routing
+        blogPosts={blogPosts}
+        selectHome={selectHome}
+        selectBlog={selectBlog}
+      />
       <Footer />
     </div>
   )
