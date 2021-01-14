@@ -19,6 +19,8 @@ import ColoredButton from '../../../shared/components/ColoredButton'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import InstagramIcon from '@material-ui/icons/Instagram'
 import SchoolIcon from '@material-ui/icons/School'
+import SelectAllIcon from '@material-ui/icons/SelectAll' // slack temp icon
+// possible react icon (https://iconify.design/icon-sets/mdi/slack.html)
 
 import gatorx_logo from "./data/gatorx-logo.png";
 
@@ -147,6 +149,11 @@ const socialIcons = [
     icon: (<InstagramIcon fontSize="medium"/>),
     label: 'Instagram',
     href: 'https://www.instagram.com/acm_sfsu/',
+  },
+  {
+    icon: (<SelectAllIcon fontSize="medium"/>),
+    label: 'Slack',
+    href: 'https://sfsucomputerscience.slack.com',
   },
 ]
 
