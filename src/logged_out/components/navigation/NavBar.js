@@ -12,11 +12,13 @@ import {
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import HomeIcon from '@material-ui/icons/Home'
+import StoreIcon from '@material-ui/icons/Store';
 import HowToRegIcon from '@material-ui/icons/HowToReg'
 import LockOpenIcon from '@material-ui/icons/LockOpen'
 import BookIcon from '@material-ui/icons/Book'
 import NavigationDrawer from '../../../shared/components/NavigationDrawer'
 import * as Scroll from 'react-scroll'
+import { StoreMallDirectoryOutlined } from '@material-ui/icons'
 
 const styles = (theme) => ({
   appBar: {
@@ -67,6 +69,11 @@ function NavBar(props) {
       name: 'Team',
       icon: <HowToRegIcon className="text-white" />,
     },
+    {
+      to: 'pricing',
+      name: 'Merch',
+      icon: <StoreIcon  className="text-white"/>
+    }
   ]
   return (
     <div className={classes.root}>

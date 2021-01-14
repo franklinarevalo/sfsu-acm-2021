@@ -2,14 +2,16 @@ import React, { Fragment, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import HeadSection from './HeadSection'
 import FeatureSection from './FeatureSection'
-import PricingSection from '../Pricing/PricingSection'
+import PricingSection from '../pricing/PricingSection'
 import About from '../about/About'
+import Blog from '../blog/Blog'
+import Pricing from '../pricing/Pricing'
 import { Link } from 'react-router-dom'
 
 import { Typography, withWidth, withStyles } from '@material-ui/core'
 
 import * as Scroll from 'react-scroll'
-import Blog from '../blog/Blog'
+
 
 const styles = (theme) => ({
   noDecoration: {
@@ -38,12 +40,13 @@ function Home(props) {
         </Typography>
         <Blog blogPosts={blogPosts.slice(1, 4)} selectBlog={selectBlog} />
         <div className={classes.centerDiv}>
-          <Link className={classes.noDecoration} to="/blog">
+          <Link className={classes.noDecoration, "lg-mg-bottom"} to="/blog">
             <Typography
               variant="h4"
               display="inline"
               color="secondary"
               align="center"
+              
             >
               View more
             </Typography>
@@ -51,7 +54,12 @@ function Home(props) {
         </div>
       
       </Element>
-      <PricingSection />
+      <Typography variant="h3" align="center" className="md-mg-bottom">
+        Merchandise 
+      </Typography>
+      <Link className={classes.noDecoration} to="/pricing">
+      <PricingSection  name="pricing"/>
+      </Link>
       <Element name="team">
         <About />
       </Element>

@@ -75,13 +75,13 @@ const interviewContent = (
 
 export default [
   {
-    title: "Interview Prep 2020",
-    id: 1,
-    date: "Fridays @ 7",
-    imageSrc: interviewPrep,
+    title: "Advent Of Code",
+    id: 3,
+    date: "December 2020",
+    imageSrc: adventOfCode,
     snippet:
-      "Fall 2020 Weekly Interview Prep sessions",
-    content: interviewContent
+      "Holiday coding challenges, complete 50 fun questions and earn stars! ",
+    content: '',
   },
   {
     title: "Mock Interview",
@@ -90,26 +90,9 @@ export default [
     imageSrc: mockInterview,
     snippet:
       "Ever wondered what a real coding interview will be like?",
-    content: content
+    content: ''
   },
-  {
-    title: "Advent Of Code",
-    id: 3,
-    date: "December 2020",
-    imageSrc: adventOfCode,
-    snippet:
-      "Holiday coding challenges, complete 50 fun questions and earn stars! ",
-    content: content
-  },
-  {
-    title: "Github Workshop",
-    id: 4,
-    date: 1572281600,
-    imageSrc: githubWorshop,
-    snippet:
-      "Be a team champion with your master Git skills through Github",
-    content: content
-  },
+
   {
     title: "Web Development Workshop",
     id: 5,
@@ -117,7 +100,7 @@ export default [
     imageSrc: webDevWorkshop,
     snippet:
       "Introduction to core tools and concepts of web development",
-    content: content
+    content: ''
   },
   {
     title: "Android Application Workshop",
@@ -125,8 +108,8 @@ export default [
     date: 1575281600,
     imageSrc: appWorkshop,
     snippet:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-    content: content
+      " how to build an Android app that can take input, display output, get data from a network API, and understand how the basic components of android are interrelated.",
+    content: ''
   },
   {
     title: "AR / VR Workshop",
@@ -134,8 +117,8 @@ export default [
     date: 1575281600,
     imageSrc: arvrWorkshop,
     snippet:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-    content: content
+      "She will teach us how to use Unity, a cross-platform game engine, to develop an AR app. She will also discuss which design guidelines for both Augmented and Virtual Reality are needed for a compelling game experience",
+    content: ""
   },
   {
     title: "IOT Workshop",
@@ -144,7 +127,7 @@ export default [
     imageSrc: iotWorkshop,
     snippet:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-    content: content
+    content: ''
   },
   {
     title: "ACM Distinguished Speaker",
@@ -152,8 +135,8 @@ export default [
     date: 1575281600,
     imageSrc: gameSpeaker,
     snippet:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-    content: content
+      " These speaker sessions are a perfect opportunity to interface with professionals who you may share a similar passion.",
+    content: ''
   },
   {
     title: "ACM Distinguished Speaker",
@@ -161,8 +144,8 @@ export default [
     date: 1575281600,
     imageSrc: thinkBeyond,
     snippet:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-    content: content
+      " These speaker sessions are a perfect opportunity to interface with professionals who you may share a similar passion.",
+    content: ''
   },
   {
     title: "ACM Distinguished Speaker",
@@ -170,8 +153,8 @@ export default [
     date: 1575281600,
     imageSrc: invent,
     snippet:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-    content: content
+      " These speaker sessions are a perfect opportunity to interface with professionals who you may share a similar passion.",
+    content: ''
   },
   {
     title: "ACM Distinguished Speaker",
@@ -179,8 +162,17 @@ export default [
     date: 1575281600,
     imageSrc: designAlgorithm,
     snippet:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-    content: content
+      " These speaker sessions are a perfect opportunity to interface with professionals who you may share a similar passion.",
+    content: ''
+  },
+  {
+    title: "Github Workshop",
+    id: 4,
+    date: 1572281600,
+    imageSrc: githubWorshop,
+    snippet:
+      "Be a team champion with your master Git skills through Github",
+    content: ''
   },
   {
     title: "Online Portfolio Workshop",
@@ -188,7 +180,16 @@ export default [
     date: 1575281600,
     imageSrc: resumeWorkshop,
     snippet:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-    content: content
-  }
+      "Create a simple resume and host it using Github",
+    content: ''
+  },
+  {
+    title: "Interview Prep 2020",
+    id: 1,
+    date: "Fridays @ 7",
+    imageSrc: interviewPrep,
+    snippet:
+      "Fall 2020 Weekly Interview Prep sessions",
+    content: '',
+  },
 ];

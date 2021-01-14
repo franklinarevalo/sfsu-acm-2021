@@ -6,6 +6,7 @@ import Home from './home/Home'
 import Blog from './blog/Blog'
 import BlogPost from './blog/BlogPost'
 import About from './about/About'
+import PricingSection from './pricing/PricingSection'
 
 function Routing(props) {
   const { blogPosts, selectBlog, selectHome } = props
@@ -38,6 +39,13 @@ function Routing(props) {
       <PropsRoute
         path="/"
         component={Home}
+        selectBlog={selectBlog}
+        blogPosts={blogPosts}
+        selectHome={selectHome}
+      />
+      <PropsRoute
+        path="/pricing"
+        component={PricingSection}
         selectBlog={selectBlog}
         blogPosts={blogPosts}
         selectHome={selectHome}

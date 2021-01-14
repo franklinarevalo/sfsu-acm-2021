@@ -38,8 +38,16 @@ function Main(props) {
 
   const selectBlog = useCallback(() => {
     smoothScrollTop()
-    document.title = 'ACM Events | SFSU'
+    document.title = 'ACM Blog | SFSU'
     setSelectedTab('Blog')
+  }, [setSelectedTab])
+
+
+  
+  const selectPricing = useCallback(() => {
+    smoothScrollTop()
+    document.title = 'ACM Blog | SFSU'
+    setSelectedTab('Pricing')
   }, [setSelectedTab])
 
   const openLoginDialog = useCallback(() => {
