@@ -11,9 +11,9 @@ import {
 } from '@material-ui/core'
 import PriceCard from './PriceCard'
 import calculateSpacing from '../home/calculateSpacing'
-import tshirt from "../../dummy_data/images/merch/acmTshirt.png"
-import hoodie from "../../dummy_data/images/merch/acmHoodie.png"
-
+import tshirt from "./Images/merch/acmTshirt.png"
+import hoodie from "./Images/merch/acmHoodie.png"
+import beanie from "./Images/merch/beanie.jpg"
 const styles = (theme) => ({
   containerFix: {
     [theme.breakpoints.down('md')]: {
@@ -62,10 +62,10 @@ const pricePlans = [
     features: ['Black', 'Navy', 'Grey'],
   },
   {
-    title: 'Custom',
-    price: '25.00',
-    src: tshirt,
-    features: ['Face Mask', 'Socks', 'Beanie'],
+    title: 'Beanie',
+    price: '18.00',
+    src: beanie,
+    features: ['White', 'Black', 'Grey'],
   },
 ]
 

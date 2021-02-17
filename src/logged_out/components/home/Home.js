@@ -34,8 +34,8 @@ function Home(props) {
         <HeadSection />
       </Element>
       <Element name="events">
-      <FeatureSection />
-      <Typography variant="h3" align="center" className="md-mg-bottom">
+        <FeatureSection />
+        <Typography variant="h3" align="center" className="md-mg-bottom">
           Events
         </Typography>
         <Blog blogPosts={blogPosts.slice(1, 4)} selectBlog={selectBlog} />
@@ -46,20 +46,22 @@ function Home(props) {
               display="inline"
               color="secondary"
               align="center"
-              
+
             >
               View more
             </Typography>
           </Link>
         </div>
-      
+
       </Element>
-      <Typography variant="h3" align="center" className="md-mg-bottom">
-        Merchandise 
-      </Typography>
-      <Link className={classes.noDecoration} to="/pricing">
-      <PricingSection  name="pricing"/>
-      </Link>
+      <Element name="pricing">
+        <Typography variant="h3" align="center" className="md-mg-bottom">
+          Merchandise
+        </Typography>
+        <Link className={classes.noDecoration} to="/pricing">
+          <PricingSection />
+        </Link>
+      </Element>
       <Element name="team">
         <About />
       </Element>

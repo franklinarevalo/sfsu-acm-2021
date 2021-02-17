@@ -20,6 +20,7 @@ import mallissa_image from './data/mallissa.jpg'
 import siddhi_image from './data/siddhi.png'
 import wameedh_image from './data/wameedh.jpg'
 import yennie_image from './data/yennie.jpg'
+import jason_image from './data/jasonFujii.jpeg'
 import github1 from './data/eventPictures/githubworkshop.PNG'
 import github2 from './data/eventPictures/github2.PNG'
 import github3 from './data/eventPictures/gitworkshop.PNG'
@@ -129,6 +130,11 @@ const team = [
     name: 'Yennie Tran',
     title: 'Social Outreach Manager',
     image: yennie_image,
+  },
+  {
+    name: 'Jason Fujii',
+    title: 'External Relations Officer',
+    image: jason_image,
   },
 ]
 

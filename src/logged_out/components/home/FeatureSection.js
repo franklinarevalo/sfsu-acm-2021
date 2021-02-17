@@ -37,11 +37,11 @@ const styles = (theme) => ({
 
 const features = [
   {
-    color: '#00C853',
-    headline: 'Resume Building',
+    color: '#64DD17',
+    headline: 'Network',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-    icon: <BuildIcon style={{ fontSize: iconSize }} />,
+    icon: <HeadsetMicIcon style={{ fontSize: iconSize }} />,
     mdDelay: '0',
     smDelay: '0',
   },
@@ -82,11 +82,11 @@ const features = [
     smDelay: '0',
   },
   {
-    color: '#64DD17',
-    headline: 'Network',
+    color: '#00C853',
+    headline: 'Resume Building',
     text:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-    icon: <HeadsetMicIcon style={{ fontSize: iconSize }} />,
+    icon: <BuildIcon style={{ fontSize: iconSize }} />,
     mdDelay: '400',
     smDelay: '200',
   },
@@ -146,7 +146,7 @@ function FeatureSection(props) {
                   Icon={element.icon}
                   color={element.color}
                   headline={element.headline}
-                  text={element.text}
+                  // text={element.text}
                 />
               </Grid>
             ))}

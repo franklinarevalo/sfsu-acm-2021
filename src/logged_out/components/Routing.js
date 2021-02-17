@@ -7,6 +7,7 @@ import Blog from './blog/Blog'
 import BlogPost from './blog/BlogPost'
 import About from './about/About'
 import PricingSection from './pricing/PricingSection'
+import Pricing from './pricing/Pricing'
 
 function Routing(props) {
   const { blogPosts, selectBlog, selectHome } = props
@@ -35,7 +36,10 @@ function Routing(props) {
         blogPosts={blogPosts}
       />
       <PropsRoute exact path="/about" component={About} />
-      )
+      <PropsRoute exact
+        path="/pricing"
+        component={Pricing}
+      />
       <PropsRoute
         path="/"
         component={Home}
@@ -43,13 +47,7 @@ function Routing(props) {
         blogPosts={blogPosts}
         selectHome={selectHome}
       />
-      <PropsRoute
-        path="/pricing"
-        component={PricingSection}
-        selectBlog={selectBlog}
-        blogPosts={blogPosts}
-        selectHome={selectHome}
-      />
+
       )
     </Switch>
   )

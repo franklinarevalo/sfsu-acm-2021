@@ -14,73 +14,69 @@ import resumeWorkshop from "./images/events/resumeWorkshop.png";
 import webDevWorkshop from "./images/events/webWorkshop.png";
 import invent from "./images/events/invent.jpg";
 import designAlgorithm from "./images/events/designAlgorithms.jpg";
+import gameNight from "./images/events/GameNight.png";
+import vrPart2 from "./images/events/VRpart2.png";
+import careerFair from "./images/events/careerfair.jpg";
+import sean from "./images/events/seanInterviewPrep.png";
+import speakerSpring from "./images/events/spring2021speaker.png";
+import ACMGeneral from "./images/events/ACMGeneral.png";
 
-const content = (
+const careerFairContent = (
   <Fragment>
     <Typography variant="h6" paragraph>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore.
+      Register with the link below
     </Typography>
     <Typography paragraph>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-      sit amet.
+    https://www.accelevents.com/e/EngineeringComputerScienceCareerFairSpring2021#about
     </Typography>
   </Fragment>
 );
-const interviewContent = (
-  <Fragment>
-    <Typography variant="h6" paragraph>
-      Hone your interview skills
-    </Typography>
-    <Typography paragraph>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-      sit amet.
-    </Typography>
-    <Typography paragraph>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem.
-    </Typography>
-    <Typography variant="h6" paragraph>
-      Title
-    </Typography>
-    <Typography paragraph>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-      amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-      diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-      sit amet.
-    </Typography>
-  </Fragment>
-);
+
 
 export default [
   {
-    title: "Advent Of Code",
+    title: "Interview Prep",
     id: 3,
-    date: "December 2020",
-    imageSrc: adventOfCode,
+    date: "February 24, 6pm",
+    imageSrc: sean,
     snippet:
-      "Holiday coding challenges, complete 50 fun questions and earn stars! ",
+      "",
+    content: '',
+  },
+  {
+    title: "ACM General Meeting",
+    id: 3,
+    date: "Mondays",
+    imageSrc: ACMGeneral,
+    snippet:
+      "",
+    content: '',
+  },
+  {
+    title: "Career Fair",
+    id: 3,
+    date: "February 26, 10-6pm",
+    imageSrc: careerFair,
+    snippet:
+      "Last day to register for the fair will be February 24 @11:59pm",
+    content: careerFairContent,
+  },
+  {
+    title: "VR Work Shop",
+    id: 3,
+    date: "January 28, 6-7:30pm",
+    imageSrc: vrPart2,
+    snippet:
+      "Step by step tutorial on how to make an interactive VR interface",
+    content: '',
+  },
+  {
+    title: "Game Night",
+    id: 1,
+    date: "January 29 @6pm",
+    imageSrc: gameNight,
+    snippet:
+      "Start off the Spring 2021 semester with a blast! Jack Box Party game night. Come meet the gang ",
     content: '',
   },
   {
@@ -96,7 +92,7 @@ export default [
   {
     title: "Web Development Workshop",
     id: 5,
-    date: 1573281600,
+    date: '',
     imageSrc: webDevWorkshop,
     snippet:
       "Introduction to core tools and concepts of web development",
@@ -105,7 +101,7 @@ export default [
   {
     title: "Android Application Workshop",
     id: 6,
-    date: 1575281600,
+    date: '',
     imageSrc: appWorkshop,
     snippet:
       " how to build an Android app that can take input, display output, get data from a network API, and understand how the basic components of android are interrelated.",
@@ -114,7 +110,7 @@ export default [
   {
     title: "AR / VR Workshop",
     id: 6,
-    date: 1575281600,
+    date: '',
     imageSrc: arvrWorkshop,
     snippet:
       "She will teach us how to use Unity, a cross-platform game engine, to develop an AR app. She will also discuss which design guidelines for both Augmented and Virtual Reality are needed for a compelling game experience",
@@ -123,7 +119,7 @@ export default [
   {
     title: "IOT Workshop",
     id: 6,
-    date: 1575281600,
+    date: '',
     imageSrc: iotWorkshop,
     snippet:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
@@ -132,7 +128,7 @@ export default [
   {
     title: "ACM Distinguished Speaker",
     id: 6,
-    date: 1575281600,
+    date: '',
     imageSrc: gameSpeaker,
     snippet:
       " These speaker sessions are a perfect opportunity to interface with professionals who you may share a similar passion.",
@@ -141,7 +137,7 @@ export default [
   {
     title: "ACM Distinguished Speaker",
     id: 6,
-    date: 1575281600,
+    date: '',
     imageSrc: thinkBeyond,
     snippet:
       " These speaker sessions are a perfect opportunity to interface with professionals who you may share a similar passion.",
@@ -150,7 +146,7 @@ export default [
   {
     title: "ACM Distinguished Speaker",
     id: 6,
-    date: 1575281600,
+    date: '',
     imageSrc: invent,
     snippet:
       " These speaker sessions are a perfect opportunity to interface with professionals who you may share a similar passion.",
@@ -159,7 +155,7 @@ export default [
   {
     title: "ACM Distinguished Speaker",
     id: 6,
-    date: 1575281600,
+    date: '',
     imageSrc: designAlgorithm,
     snippet:
       " These speaker sessions are a perfect opportunity to interface with professionals who you may share a similar passion.",
@@ -168,7 +164,7 @@ export default [
   {
     title: "Github Workshop",
     id: 4,
-    date: 1572281600,
+    date: '',
     imageSrc: githubWorshop,
     snippet:
       "Be a team champion with your master Git skills through Github",
@@ -177,7 +173,7 @@ export default [
   {
     title: "Online Portfolio Workshop",
     id: 6,
-    date: 1575281600,
+    date: '',
     imageSrc: resumeWorkshop,
     snippet:
       "Create a simple resume and host it using Github",
