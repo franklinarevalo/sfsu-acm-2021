@@ -20,7 +20,8 @@ import careerFair from "./images/events/careerfair.jpg";
 import sean from "./images/events/seanInterviewPrep.png";
 import speakerSpring from "./images/events/spring2021speaker.png";
 import ACMGeneral from "./images/events/ACMGeneral.png";
-
+import cyberSecOne from "./images/events/cyberSecOne.png";
+import fiveG from "./images/events/SpeakerFiveG.png";
 const careerFairContent = (
   <Fragment>
     <Typography variant="h6" paragraph>
@@ -31,9 +32,51 @@ const careerFairContent = (
     </Typography>
   </Fragment>
 );
+const CyberSecContent = (
+  <Fragment>
+    <Typography variant="h6" paragraph>
+    About this Lecture
+    </Typography>
+    <Typography>Number of Slides:  60 / Duration:  60 minutes / Languages Available:  English / Last Updated:  10/10/2018</Typography>
+    <Typography paragraph>
+    This talk offers an introduction for students and practitioners to the application of the scientific method to cybersecurity tools and systems. Creating, using, and evaluating cybersecurity tools and systems are complex tasks. Many cybersecurity professionals are attracted to the challenges of building these tools and systems, and are motivated to use their expertise to bring sanity and solutions to real-world problems. The addition of scientific thinking aids in dealing with uncertainty, unknowns, choices, and crises. It can improve existing products and lead to groundbreaking innovation and applications. In this talk, we’ll focus on practical, real-world applications of science to the practice of cybersecurity. You’ll learn about scientific principles and flexible methodologies for effective security as you design, execute, and evaluate your own experiments. You’ll discover why the application of science is worth the added effort and you’ll glean insights from specific examples of experimentation in cybersecurity. 
+    </Typography>
+    <Typography variant="h6" paragraph>
+    About the Speaker
+    </Typography>
+    <Typography paragraph>
+    Dr. Josiah Dykstra is a Technical Fellow in the Cybersecurity Collaboration Center at the National Security Agency (NSA). He advises leadership and employees on technical matters for integrated cybersecurity operations and provides overall technical direction on projects and programs that enable high impact operational effects in the cyber domain and deny adversaries the ability to influence, exploit, or threaten cyber and information infrastructure domains.
 
+Dr. Dykstra has held a variety of technical and leadership positions at NSA. Most recently, he served as a senior researcher within NSA's Research Directorate studying computer network operations. His work has also included penetration testing, digital forensics, and malware analysis. Dykstra remains an active collaborator with academic, industry, and government researchers around the country. He has received numerous noteworthy awards, including the Presidential Early Career Award for Scientists and Engineers (PECASE), Galileo Award from the Director of National Intelligence, and NSA Research Team of the Year. He was recently named to the NSF CyberCorps Hall of Fame.
+
+Dykstra is a Lifetime and Distinguished Member of ACM. He attended the 2nd Heidelberg Laureate Forum as a Young Researcher in 2014, which motivated his commitment to ACM. He is passionate about developing and empowering the next generation of interdisciplinary computing professionals, particularly in cybersecurity. His active research interests include human augmentation and human factors in cybersecurity. Dr. Dykstra co-authored a 2018 Viewpoint in "Communications of the ACM" proposing hands-off, behind-the-scenes cyber defense.
+
+Josiah received a B.S. in computer science and B.A. in music from Hope College (Holland, MI), M.S in information assurance from Iowa State University, and Ph.D. in computer science from the University of Maryland, Baltimore County. His doctoral research explored new technical and legal mechanisms to support digital forensics for cloud computing environments. Dr. Dykstra is an organizer for the Digital Forensics Research Workshop (DFRWS). He is a Fellow of the American Academy of Forensic Sciences (AAFS), member of the American Association for the Advancement of Science (AAAS), and member of the Human Factors and Ergonomics Society (HFES). 
+
+Dr. Dykstra's book, Essential Cybersecurity Science, is a guide for practitioners and discusses key considerations for conducting scientific experiments in cybersecurity, including domain-specific insights including digital forensics and malware analysis. An experienced presenter and lecturer, he has spoken at major security events including Black Hat USA and RSA Conference.
+    </Typography>
+  </Fragment>
+);
 
 export default [
+  {
+    title: "Getting Started with Cybersecurity Science",
+    id: 3,
+    date: "April 7, 2021 6:00 P.M",
+    imageSrc: cyberSecOne,
+    snippet:
+      "Learn the application of the scientific method to cybersecurity tools and systems.",
+    content: CyberSecContent,
+  },
+  {
+    title: "Next Generation 5G Wireless Networks",
+    id: 3,
+    date: "MARCH 15, 2021 6:00 P.M.",
+    imageSrc: fiveG,
+    snippet:
+      "Learn about 5G wireless systems and the importance of its eventual commercialization ",
+    content: '',
+  },
   {
     title: "Interview Prep",
     id: 3,

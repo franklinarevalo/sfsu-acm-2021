@@ -38,7 +38,7 @@ function Home(props) {
         <Typography variant="h3" align="center" className="md-mg-bottom">
           Events
         </Typography>
-        <Blog blogPosts={blogPosts.slice(1, 4)} selectBlog={selectBlog} />
+        <Blog blogPosts={blogPosts.slice(0, 4)} selectBlog={selectBlog} />
         <div className={classes.centerDiv}>
           <Link className={classes.noDecoration, "lg-mg-bottom"} to="/blog">
             <Typography
@@ -65,6 +65,7 @@ function Home(props) {
       <Element name="team">
         <About />
       </Element>
+     
     </Fragment>
   )
 }
