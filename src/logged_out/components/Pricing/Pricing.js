@@ -85,7 +85,7 @@ function Pricing(props) {
                     </Carousel>
                 </Container>
             </Element>
-        </Fragment >
+        </Fragment>
     )
 }
 
